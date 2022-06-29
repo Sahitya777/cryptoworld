@@ -11,7 +11,7 @@ import {News} from '../components'
 const { Title } = Typography;
 
 const HomePage = () => {
-  const { data, isLoading } = useGetCryptosQuery();
+  const { data, isLoading } = useGetCryptosQuery(10);
   const globalStats=data?.data?.stats;
 
   if (isLoading) return <Loader/>;
