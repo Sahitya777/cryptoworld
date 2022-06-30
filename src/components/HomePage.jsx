@@ -13,6 +13,8 @@ const { Title } = Typography;
 const HomePage = () => {
   const { data, isLoading } = useGetCryptosQuery(10);
   const globalStats=data?.data?.stats;
+  console.log(data);
+ 
 
   if (isLoading) return <Loader/>;
 
